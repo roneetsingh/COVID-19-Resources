@@ -23,7 +23,7 @@ details of the leads.
 ![Screenshot 2021-07-02 170821](https://user-images.githubusercontent.com/56071565/124269323-5d120880-db58-11eb-989e-72c129cd00fc.png)
 ![Screenshot 2021-07-02 170856](https://user-images.githubusercontent.com/56071565/124269332-600cf900-db58-11eb-8de7-0e32b181feb4.png)
 
-The application is deployed to Heroku and can be accessed through the following link:
+The application is deployed on Heroku and can be accessed through the following link:
 
 [COVID-19 Resources on Heroku](https://covidresourcesdj.herokuapp.com/)
 
@@ -46,18 +46,18 @@ Users can do the following:
 
 Admins can do the following:
 
-- Login or logout to the admin panel
+- Login or logout to the admin panel.
 - View all the information stored in the database. They can view/add/edit/delete resources and volunteers.
 
 Volunteers can do the following:
 
-- Login or logout to the admin panel as a volunteer
+- Login or logout to the admin panel as a volunteer.
 - View all the information stored in the database. They can view/add/edit/delete resources and add volunteers.
 
 
 ## Database
 
- - MySQL database is used to store resource(s) details.
+ - MySQL database is used to store resource(s) and their details.
 
 ## Run
 
