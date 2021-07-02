@@ -27,10 +27,6 @@ The application is deployed to Heroku and can be accessed through the following 
 
 [COVID-19 Resources on Heroku](https://covidresourcesdj.herokuapp.com/)
 
-The website resembles a real store and you can add products to your cart and buy them.We have not integrated the payment options as one needs PayPal or any other account.
-
-In order to access the admin panel on "/admin" you need to provide the admin email and password.
-
 ## Technology
 
 • Tech Used: Python, Django, HTML/CSS, Bootstrap, JS.
