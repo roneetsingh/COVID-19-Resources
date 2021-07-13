@@ -16,7 +16,7 @@ SECRET_KEY = 'y5w+e#@71z&uzt22fdig1&u6qsa+s$z-o^nn1!7o)7ois+^d9n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["covidresourcesdj.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["covidresourcesdj.herokuapp.com", "localhost",]
 
 
 # Application definition
@@ -112,3 +112,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / "static"
+

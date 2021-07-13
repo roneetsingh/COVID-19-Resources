@@ -1,0 +1,206 @@
+{% extends 'app/base.html' %} {% block title %} Home{% endblock title %}
+{% block content %}
+<style>
+    .main_header{
+        height: 450px;
+        width: 100%;
+    }
+    html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.rightside h1{
+    font-size: 3rem;
+  /* Center vertically and horizontally */
+
+
+  }
+.covid img{
+    animation: corona 3s linear infinite;
+}
+@keyframes corona{
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+.leftside img{
+    animation: heartbeat 7s linear infinite;
+}
+@keyframes heartbeat{
+    0% {transform: scale(.75);}
+    20% {transform: scale(1);}
+    40% {transform: scale(.75);}
+    60% {transform: scale(1);}
+    80% {transform: scale(.75);}
+    100% {transform: scale(.75);}
+}
+.sub_section{
+    background-color: #fbfafd;
+}
+#hover-content {
+    display:none;
+}
+#parent:hover #hover-content {
+    display:block;
+}
+a.test {
+    color: red;
+    }
+    .img__wrap {
+        position: relative;
+        
+      }
+      
+      .img__description {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 50px 0;
+        background: rgba(198, 224, 240, 0.72);
+        color: rgb(0, 0, 0);
+        visibility: hidden;
+        opacity: 0;
+      
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+      }
+      
+      .img__wrap:hover .img__description {
+        visibility: visible;
+        opacity: 1;
+      }
+</style>
+<div class="col-sm-12 text-center">
+<div class="border shadow rounded p-3 my-5">
+    <div class="leftside w-100 h-100 d-flex justify-content-center align-items-center">
+        <img src="https://image.flaticon.com/icons/png/512/4807/4807667.png" width="300" height="300">
+    </div>
+    <div class="rightside w-100 h-100 d-flex justify-content-center align-items-center">
+        <h2>Let's stay safe and fight together against the Cor<span class="covid"><img src="https://image.flaticon.com/icons/png/512/2760/2760528.png" width="20" height="20"></span>na virus</h2>
+        </div>
+        <div class="row px-5">
+        <div id="parent" class="img__wrap col border rounded p-5 m-3 text-center">
+            <a class="test" href="https://covidtrackerjs.herokuapp.com/"><b><img class="img__wrap img-fluid" width="256" height="144" src="https://i.ytimg.com/vi/usSQeIdZ-9E/maxresdefault.jpg"><div class="img__description" id="hover-content">
+                A Covid-19 Tracker that shows statewise data for India.
+            </div></b></a>
+        </div>  
+        
+        <div id="parent" class="img__wrap col border rounded p-5 m-3 text-center">
+            <a class="test" href="{% url 'homepage' %}"><b><img class="img__wrap img-fluid" width="256" height="144" src="https://quincy-network.s3.ca-central-1.amazonaws.com/wp-content/uploads/sites/9/2020/12/COVID-19-VACCINE-GENERIC-BLUE-BACKGROUND.jpg"><div class="img__description text-center" id="hover-content">
+                A Covid-19 Resources Tracker that shows statewise/citywise data for resources.
+            </div></b></a>
+
+        </div>
+</div>  
+        <hr>
+        <div class="sub_section">
+    <img src="https://i2.wp.com/qualkem.com/wp-content/uploads/2020/10/3D_medical_animation_coronavirus_structure.jpg?zoom=2&resize=760%2C340&ssl=1" class="img-fluid p-5">
+    
+    <h2>
+        What is Covid-19 or Corona Virus?
+        <br>
+    </h2>
+<p>Covid-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019.</p>
+<p>Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</p></div>
+<hr>
+<h2>
+    Covid-19 Symptoms
+</h2>
+<div class="container p-5">
+    <div class="row">
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/4380/4380411.png" class="img-fluid" width="103" height="103">
+            <figcaption><b>Cough</b></figcaption>
+        </figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/1497/1497066.png" class="img-fluid" width="100" height="100">
+            <figcaption><b>Running Nose</b></figcaption>
+        </figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/2966/2966383.png" class="img-fluid" width="100" height="100">
+            <figcaption><b>Fever</b></figcaption>
+        </figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/619/619404.png" class="img-fluid" width="100" height="100">
+            <figcaption><b>Cold</b></figcaption>
+        </figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/3997/3997779.png" class="img-fluid" width="100" height="100">
+            <figcaption><b>Fatigueness</b></figcaption>
+        </figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/2927/2927735.png" class="img-fluid" width="100" height="100">
+            <figcaption><b>Difficulty in breathing</b></figcaption>
+        </figure>
+        </div>
+    </div>
+</div>
+<hr>
+<h2>
+    Prevention Against Corona Virus
+</h2>
+<div class="container p-5">
+    <div class="row">
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/3017/3017492.png" class="img-fluid" width="100" height="100">
+            <p><b>Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub.
+            </b></p></figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/1531/1531830.png" class="img-fluid" width="100" height="100">
+            
+            <p><b> Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze.
+            </b></p></figure>
+        </figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/3107/3107654.png" class="img-fluid" width="100" height="100">
+            <p><b>Avoid close contact (1 meter or 3 feet) with people who are unwell. Stay home and self-isolate from others in the household if you feel unwell.
+            </b></p></figure>
+        </figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/2962/2962889.png" class="img-fluid" width="100" height="100">
+            <p><b>Stay at home and self-isolate from others in the household if you feel unwell.
+            </b></p></figure>
+        </figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/1169/1169140.png" class="img-fluid" width="100" height="100">
+            <p><b>Stay informed by following the news and follow the recommended practices.
+            </b></p></figure>
+        </figure>
+        </div>
+        <div class="col-lg-4 mt-5">
+            <figure class="text-center">
+            <img src="https://image.flaticon.com/icons/png/512/2966/2966452.png" class="img-fluid" width="100" height="100">
+            <p><b>If you have fever, cough and difficulty breathing, seek medical care early.
+            </b></p></figure>
+        </figure>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+{%endblock%}

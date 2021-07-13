@@ -57,3 +57,9 @@ def AddResource(request):
 
 def Tracker(request):
     return render(request, template_name='app/tracker.html')
+
+def About(request):
+    return render(request, template_name='app/about.html')
+
+def Index(request):
+    return render(request, template_name='app/home.html')
