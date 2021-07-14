@@ -19,9 +19,9 @@ details of the leads.
 
 ## Demo
 
-![Screenshot 2021-07-02 170726](https://user-images.githubusercontent.com/56071565/124269307-597e8180-db58-11eb-8126-8a8c64d31765.png)
-![Screenshot 2021-07-02 170821](https://user-images.githubusercontent.com/56071565/124269323-5d120880-db58-11eb-989e-72c129cd00fc.png)
-![Screenshot 2021-07-02 170856](https://user-images.githubusercontent.com/56071565/124269332-600cf900-db58-11eb-8de7-0e32b181feb4.png)
+![tracker](https://user-images.githubusercontent.com/56071565/125618321-296f3872-a2ea-4ba4-8c7d-9d5754d5465f.png)
+![resources](https://user-images.githubusercontent.com/56071565/125618328-618c788c-225d-43ba-8d9c-2e16a67bd98b.png)
+![dashboard](https://user-images.githubusercontent.com/56071565/125618329-54a17f63-941f-4275-9594-00c1018bcd74.png)
 
 The application is deployed on Heroku and can be accessed through the following link:
 
