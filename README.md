@@ -33,7 +33,13 @@ In order to access the admin panel on "/admin" you need to provide the admin ema
 
 The application is built with:
 
-
+- asgiref==3.3.4
+- Django==3.2.2
+- Pillow==8.2.0
+- pytz==2021.1
+- sqlparse==0.4.1
+- waitress==2.0.0
+- whitenoise==5.2.0
 
 ## Features
 
