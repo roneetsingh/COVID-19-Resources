@@ -6,7 +6,7 @@
 - [Demo](#demo)
 - [Technology](#technology)
 - [Features](#features)
-- [Database Models](#database)
+- [Database](#database)
 - [Run](#run)
 
 ## Introduction
@@ -18,7 +18,8 @@ oxygen cylinders, ambulances etc.
 
 ## Demo
 
-
+![Screenshot 2021-12-02 154534](https://user-images.githubusercontent.com/56071565/144402629-7032d2e9-2ad5-4468-a7c6-2464198b76e0.png)
+![Screenshot 2021-12-02 154557](https://user-images.githubusercontent.com/56071565/144402642-1787e27c-708e-48ec-95cb-420f8757c335.png)
 
 The application is deployed on Heroku and can be accessed through the following link:
 
